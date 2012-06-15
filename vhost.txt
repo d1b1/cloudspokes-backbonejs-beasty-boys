@@ -1,0 +1,21 @@
+
+# In your /etc/hosts add: 127.0.0.1 cloudspokes.dev
+
+# Add the following to your apache setup. Then restart your web server.
+
+<VirtualHost *:80>
+
+   DocumentRoot "/Users/steve/sites/cloudspokes-backbone-challenge"
+
+   ServerName cloudspokes.dev
+
+   <Directory "/Users/steve/sites/cloudspokes-backbone-challenge">
+
+     Options All
+     AllowOverride All
+     Order allow,deny
+     Allow from all
+
+   </Directory>
+
+</VirtualHost>

@@ -21,7 +21,7 @@ app.configure('production', function() {
   app.use('/assets/css/', express.static(__dirname + '/public/dist/release/'));
 });
 
-app.use(express.static( __dirname + '/public/' ));
+app.use(express.static( __dirname ));
 
 var port = process.env.PORT || 4200;
 app.listen(port, function() { 

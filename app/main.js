@@ -10,7 +10,9 @@ function(namespace, $, Bb, Table) {
   // Defining the application router, you can attach sub routers here.
   var Router = Bb.Router.extend({
     routes: {
-      "": "index"
+      "": "index",
+      "about": "about",
+      "contact": "contact"
     },
 
     index: function() {
@@ -19,6 +21,30 @@ function(namespace, $, Bb, Table) {
 
       // Attach the tutorial to the DOM
       tutorial.render(function(el) {
+        $("#main").html(el);
+      });
+    },
+
+    about: function() {
+      var route = this;
+      var content = new Table.Views.Content();
+
+      content.template = "app/templates/about.html";
+
+      // Attach the tutorial to the DOM
+      content.render(function(el) {
+        $("#main").html(el);
+      });
+    },
+
+    contact: function() {
+      var route = this;
+      var content = new Table.Views.Content();
+
+      content.template = "app/templates/contact.html";
+
+      // Attach the tutorial to the DOM
+      content.render(function(el) {
         $("#main").html(el);
       });
     }

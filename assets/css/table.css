@@ -24,11 +24,6 @@
 
 /* Styles for the Table View */
 
-#tablegrid {
-  width: 800px;
-  margin: auto;
-}
-
 .gridrow { 
   width: 1000px; 
   padding: 0px; 
@@ -47,10 +42,6 @@
   margin: 0px 10px 10px 0px;
   padding: 3px;
   font-size: 12px;
-}
-
-a { 
-  color: black !important;
 }
 
 .col:hover{  

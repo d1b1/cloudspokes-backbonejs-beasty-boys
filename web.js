@@ -14,14 +14,14 @@ app.configure(function(){
 });
 
 app.configure('production', function() {
-  console.log('Note: release');
+  console.log('Note: Using RequireJS assets.');
 
   // Paths & Files
-  app.use('/assets/js/libs/', express.static(__dirname + '/public/dist/release/'));
-  app.use('/assets/css/', express.static(__dirname + '/public/dist/release/'));
+  app.use('/assets/js/libs/', express.static(__dirname + '/dist/release/'));
+  app.use('/assets/css/', express.static(__dirname + '/dist/release/'));
 });
 
-app.use(express.static( __dirname ));
+app.use(express.static( __dirname + '/' ));
 
 var port = process.env.PORT || 4200;
 app.listen(port, function() { 

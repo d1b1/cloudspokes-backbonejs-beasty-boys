@@ -9,11 +9,47 @@
 
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/table.css">
+  <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+  </style>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
 </head>
 
 <body>
 
-  <div role="main" id="main"></div>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <h1>Backbone.js - Cloudspokes Beasty Boys Tribute</h1>
+      <p>This is a short code challenge offered by Cloudspokes.com in 
+         May of 2012.
+      </p>
+
+      <div role="main" id="main" class="span12"></div>
+
+    </div> <!-- /container -->
 
   <script data-main="app/config" src="assets/js/libs/require.js"></script>
 

@@ -93,7 +93,7 @@ function(namespace, $, Bb, Song, SongsCollection) {
 
     template: "app/templates/table.html",
 
-    className: "row tutview",
+    className: "span12",
 
     // This method will tell Bb to bind specific methods to 
     // specific events + selectors in the Views template. When 
@@ -194,7 +194,7 @@ function(namespace, $, Bb, Song, SongsCollection) {
 
   Table.Views.Content = Bb.View.extend({
 
-    className: "row",
+    className: "span12",
 
     template: "app/templates/about.html",
 

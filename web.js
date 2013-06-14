@@ -25,5 +25,5 @@ app.use(express.static( __dirname + '/' ));
 
 var port = process.env.PORT || 4200;
 app.listen(port, function() { 
-  console.log("StartUp: backbone.js-geocoder-plugin " + port ); 
+  console.log("StartUp: Cloudspokes-Beasty-boys " + port ); 
 });
